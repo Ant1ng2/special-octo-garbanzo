@@ -88,4 +88,15 @@ games = {
                 data_provider_game_id='dnb',
                 data_provider_variant_id=-1)
         }),
+    'connect4': Game(
+        name='Connect 4',
+        desc='Tic Tac Toe with gravity',
+        variants={
+            '7x5x4': GameVariant(
+                name='7x5x4',
+                desc='7x5 board with 4 in a row',
+                data_provider=GamesmanJavaDataProvider,
+                data_provider_game_id='connect4',
+                data_provider_variant_id=';width=7;height=5;pieces=4')
+        })
 }
